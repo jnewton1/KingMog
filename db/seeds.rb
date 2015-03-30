@@ -6,9 +6,11 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
-Quote.create(body:"I'll be back", auther: 'Arnold')
+# Example quotes
+#Quote.create(body:"I'll be back", auther: 'Arnold')
 
-Quote.create(body:"Get to the chopper!!!", auther: 'Arnold')
+#Quote.create(body:"Get to the chopper!!!", auther: 'Arnold')
 
-Quote.create(body:"Who is your daddy and what does he do?", auther: 'Arnold')
+#Quote.create(body:"Who is your daddy and what does he do?", auther: 'Arnold')
 
+Video.create(user: "jnewton", link: "https://www.youtube.com/watch?v=L48U7C8CNE8", comment: "First Group Raid")
