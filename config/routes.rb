@@ -6,7 +6,7 @@ Rails.application.routes.draw do
   
   #routes or create action
   get 'videos' => 'videos#index'  
-  get 'videos' => 'videos#create'  
+  post 'videos' => 'videos#create'  
   
   get 'videos' => 'videos#new' , as: :new_video
   
