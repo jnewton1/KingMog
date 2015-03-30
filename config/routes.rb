@@ -10,11 +10,11 @@ Rails.application.routes.draw do
   
   get 'videos' => 'videos#new' , as: :new_video
   
-  delete 'videos/:id' => 'video#destroy' , as: :delete_video
+  delete 'videos/:id' => 'videos#destroy' , as: :delete_video
   
   # rooutes for edit action
   get 'videos/:id/edit' => 'videos@edit' , as: :edit_video
-  post 'video/:id' => 'videos@update' , as: :update_video
+  post 'videos/:id' => 'videos@update' , as: :update_video
 
 
   get 'about' => 'home#about'
