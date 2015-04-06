@@ -13,8 +13,8 @@ Rails.application.routes.draw do
   delete 'videos/:id' => 'videos#destroy' , as: :delete_video
   
   # rooutes for edit action
-  get 'videos/:id/edit' => 'videos@edit' , as: :edit_video
-  post 'videos/:id' => 'videos@update' , as: :update_video
+  get 'videos/:id/edit' => 'videos#edit' , as: :edit_video
+  post 'videos/:id' => 'videos#update' , as: :update_video
 
 
   get 'about' => 'home#about'
