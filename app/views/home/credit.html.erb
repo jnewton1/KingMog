@@ -1,2 +1,17 @@
-<h1>Home#credit</h1>
-<p>Find me in app/views/home/credit.html.erb</p>
+<div class="jumbotron">
+  <div class="container">
+  <h1>Contact</h1>
+<p>Feel free to <a href="http://www.kingmog.com/contact/" target="_blank">contact us</a> regarding anything and everything! You can also reach us through <a href="www.facebook.com/kingmog2015" target="_blank">Facebook</a>!</p>
+<img alt="Big facebook button" src="http://i2.wp.com/www.ffxivguild.com/wp-content/uploads/2013/06/Big-facebook-button.jpg?resize=180%2C180" width="180" height="180">
+<div align="center"><strong>&nbsp;Or use this contact form below</strong>
+<%= form_tag sessions_path do %>
+  <%= label_tag :Name %><br/>
+  <%= password_field_tag :Name %><br/>
+  <%= label_tag :email %><br/>
+  <%= text_field_tag :email, params[:email] %><br/>
+  <%= label_tag :comment %><br/>
+  <%= password_field_tag :comment %><br/>
+  <%= submit_tag "Submit" %>
+<% end %>
+</div>
+

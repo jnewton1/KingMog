@@ -1,6 +1,10 @@
 Rails.application.routes.draw do
   
-  get 'credits' => 'home#credits'
+  resources :users
+  resources :sessions
+
+  
+  get 'credit' => 'home#credit'
     
   root 'home#index'
   
@@ -17,7 +21,10 @@ Rails.application.routes.draw do
   post 'videos/:id' => 'videos#update' , as: :update_video
 
 
-  get 'about' => 'home#about'
+  get 'about' => "home#about"
+  get 'signup', to: 'users#new', as: :signup
+  get 'login', to: 'sessions#new', as: :login
+  get 'logout', to: 'sessions#destroy', as: :logout
 
   
   # The priority is based upon order of creation: first created -> highest priority.
