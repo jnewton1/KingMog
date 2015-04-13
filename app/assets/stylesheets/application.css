@@ -18,11 +18,12 @@
 
 
 .jumbotron {
-  background-image:url('streets.jpg'); 
+  background-image:url('XIV_Wallpaper_03.jpg'); 
   /* background-color: #000; */
   height: 1000px;
   background-repeat: no-repeat;
   background-size: cover;
+  color: #FFFFFF;
 }
 
 .jumbotron .container {
