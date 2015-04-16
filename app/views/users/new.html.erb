@@ -1,4 +1,5 @@
 <div align="center"; style="padding-top:10%; " >
+    <h1>Registration</h1>
 <%= form_for @user do |f| %>
   <% if @user.errors.any? %>
     <%= "Error in form" %>
@@ -8,7 +9,6 @@
       <% end %>
     </ul>
   <% end %>
-  
   <%= f.label :email %><br/>
   <%= f.text_field :email %><br/>
   <%= f.label :password %><br/>

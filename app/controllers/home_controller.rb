@@ -1,4 +1,7 @@
 class HomeController < ApplicationController
+  
+   before_filter :authorize, only: [:new,:edit] 
+
   def index
   end
 

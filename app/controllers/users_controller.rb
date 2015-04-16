@@ -1,5 +1,5 @@
 class UsersController < ApplicationController
-def index
+  def index
     redirect_to new_user_path
   end
   
