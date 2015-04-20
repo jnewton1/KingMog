@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<div class="jumbotron">
+<div class="container">
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<!-- Create Title-->
+<title>Guide</title>
+  <h1>Guide</h1>
+  <!--Alert Button-->
+  <div id="guestAlert" class="alert" style="margin:0">You no longer need to register to view or create guides, but there are still <a href="http://rails3870-jnewton1.c9.io/users/new">many benefits</a> to registering.
+            <button type="button" class="close" id="guestAlertClose"><span class="glyphicon glyphicon-remove-sign"></span></button>
+        </div>
+  <!-- Unregistered Alert-->      
+        <div class="warning" style="width:800px;margin-left:auto;margin-right:auto;">
+	<h2>You are not logged in</h2>
+	<p><span class="hiliteY">WARNING:</span> You are not logged in! Posting a guide while not logged in means;</p><br>
+	<ul>
+		<li>You will be unable to edit your guide after submission.</li>
+		<li>You will not recieve attribution (we don't know who you are!).</li>
+	</ul>
+	<br>
+	<p>Your guide will still be saved and the link will always work (don't forget to bookmark it!) so you can still share the link with your friends. However, we strongly recommend that you <a href="http://rails3870-jnewton1.c9.io/users/new">Register</a> before continuing!</p>
+</div>
+   
+<div align="center">
+<%= form_tag sessions_path do %>
+  <%= label_tag :username %><br/>
+  <%= password_field_tag :username %><br/>
+  <%= label_tag :title %><br/>
+  <%= password_field_tag :title %><br/>
+  <%= label_tag :guide %><br/>
+  <%= text_field_tag :guide, params[:guide] %><br/>
+  <%= submit_tag "Submit" %>
+<% end %>
+</div>
+</html>

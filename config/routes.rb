@@ -2,6 +2,7 @@ Rails.application.routes.draw do
   
   resources :users
   resources :sessions
+  resources :guides
 
   
   get 'credit' => 'home#credit'
@@ -20,12 +21,17 @@ Rails.application.routes.draw do
   get 'videos/:id/edit' => 'videos#edit' , as: :edit_video
   post 'videos/:id' => 'videos#update' , as: :update_video
 
-
+  #routes for user login
   get 'about' => "home#about"
   get 'signup', to: 'users#new', as: :signup
   get 'login', to: 'sessions#new', as: :login
   get 'logout', to: 'sessions#destroy', as: :logout
 
+  # Routes for guides
+  get 'guides' => 'guides#index'
+  get 'new', to: 'guides#new', as: :nguide
+  get 'edit', to: 'guides#edit', as: :eguide
+  delete 'guides/:id' => 'guides#destroy' , as: :dguides
   
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
