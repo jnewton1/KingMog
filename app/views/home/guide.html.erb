@@ -25,10 +25,6 @@
    
 <div align="center">
 <%= form_tag sessions_path do %>
-  <%= label_tag :username %><br/>
-  <%= password_field_tag :username %><br/>
-  <%= label_tag :title %><br/>
-  <%= password_field_tag :title %><br/>
   <%= label_tag :guide %><br/>
   <%= text_field_tag :guide, params[:guide] %><br/>
   <%= submit_tag "Submit" %>
