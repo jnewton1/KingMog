@@ -10,4 +10,7 @@ class HomeController < ApplicationController
 
   def credit
   end
+  
+  def guides
+  end
 end
