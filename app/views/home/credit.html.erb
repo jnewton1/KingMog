@@ -1,20 +1,36 @@
-  <Title>Contact</Title>
-  <h1>Contact</h1>
-   <h3>Get Social</h3>
-                        <p>
-                            Like us on Facebook to keep up-to-date with the site!
-                        </p>
-<p>Feel free to <a href="http://www.kingmog.com/contact/" target="_blank">contact us</a> regarding anything and everything! You can also reach us through <a href="https://www.facebook.com/kingmog2015" target="_blank">Facebook</a>!</p>
-<img alt="smll facebook button" src="http://i2.wp.com/www.ffxivguild.com/wp-content/uploads/2013/06/Big-facebook-button.jpg?resize=180%2C180" width="180" height="180">
-<div align="center"><strong>&nbsp;Or use this contact form below</strong>
-<%= form_tag sessions_path do %>
-  <%= label_tag :Name %><br/>
-  <%= password_field_tag :Name %><br/>
-  <%= label_tag :email %><br/>
-  <%= text_field_tag :email, params[:email] %><br/>
-  <%= label_tag :comment %><br/>
-  <%= text_field_tag :comment, params[:comment] %><br/>
-  <%= submit_tag "Submit" %>
-<% end %>
-</div>
+<Title>Contact</Title>
+<div class="jumbotron">
+  <div class="socialcontainer">
+    <div class="socialbox">
+      <h1 align=left>Contact</h1>
+      <h3>Get Social</h3>
+      <div class="social1">
+        <p>
+          Like us on Facebook to keep up-to-date with the site!
+        </p>
+        <p>Feel free to <a href="http://www.kingmog.com/contact/" target="_blank">contact us</a> regarding anything and everything! You can also reach us through <a href="https://www.facebook.com/kingmog2015" target="_blank">Facebook</a>!</p>
+        <img alt="smll facebook button" src="http://i2.wp.com/www.ffxivguild.com/wp-content/uploads/2013/06/Big-facebook-button.jpg?resize=180%2C180" width="180" height="180">
+      </div>
+      
+<div class="social3"><span class=span1>Or</span></div> 
 
+<div class="social2">Use this contact form below:
+      <%=form_tag sessions_path do %>
+        <%=label_tag :Name %>
+          <br/>
+          <%=password_field_tag :Name %>
+            <br/>
+            <%=label_tag :email %>
+              <br/>
+              <%=text_field_tag :email, params[:email] %>
+                <br/>
+                <%=label_tag :comment %>
+                  <br/>
+                  <%=text_field_tag :comment, params[:comment] %>
+                    <br/>
+                    <%=submit_tag "Submit" %>
+                      <% end %>
+    </div>
+  </div>
+</div>
+</div>
