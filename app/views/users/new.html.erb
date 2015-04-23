@@ -1,4 +1,7 @@
-<div align="center"; style="padding-top:10%; " >
+<div class=jumbotron>
+  <div class=container>
+  <div class=bckground>
+<div align="center"; " >
     <h1>Registration</h1>
 <%= form_for @user do |f| %>
   <% if @user.errors.any? %>
@@ -17,4 +20,7 @@
   <%= f.password_field :password_confirmation %><br/>
   <%= f.submit %>
 <% end %>
+</div>
+</div>
+</div>
 </div>

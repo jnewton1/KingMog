@@ -11,6 +11,10 @@ class HomeController < ApplicationController
   def credit
   end
   
+<<<<<<< HEAD
   def guides
+=======
+  def guide
+>>>>>>> Jimbo
   end
 end
