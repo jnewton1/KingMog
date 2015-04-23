@@ -2,7 +2,7 @@ Rails.application.routes.draw do
   
   resources :users
   resources :sessions
-  resources :guides
+  #resources :guides
 
   
   get 'credit' => 'home#credit'
@@ -28,7 +28,8 @@ Rails.application.routes.draw do
   get 'logout', to: 'sessions#destroy', as: :logout
 
   # Routes for guides
-  get 'guides' => 'guides#index'
+  get 'guides' => 'home#guide'
+  #get 'guides' => 'guides#index'
   get 'new', to: 'guides#new', as: :nguide
   get 'edit', to: 'guides#edit', as: :eguide
   delete 'guides/:id' => 'guides#destroy' , as: :dguides
