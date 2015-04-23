@@ -31,8 +31,9 @@
 }
 .bckground {
   padding: 50px;
-  background-color: #000000;
-  opacity: 0.8;
+  //background-color: #000000;
+  background: rgba(0, 0, 0, 0.8);
+  //opacity: 0.8;
   color: #FFF;
   border-radius:25px;
 }
@@ -52,7 +53,7 @@
 .navbar .container .nav{
   position:relative;
   right:5%;
-  bottom:70px;
+  bottom:56px;
 }
 ul.nav a:hover { 
   color:blue !important; 
@@ -68,10 +69,11 @@ ul.nav a:hover {
   top: 100px;
   text-align: center;
   position: relative;
-  background-color: black;
-  opacity: 0.8;
+  //background-color: black;
+  background: rgba(0, 0, 0, 0.8);
   margin: auto;
   padding: 10px;
+  border-radius:25px;
 }
 .social {
   display: inline-block;
@@ -94,6 +96,15 @@ ul.nav a:hover {
   width: 40%;
   float: left;
   height: 500px;
+  background-color:black;
+}
+.social2 p{
+  position:relative;
+  top:20px;
+}
+
+.p1{
+   color:black !important;
 }
 .social3 {
   display: table;
@@ -111,5 +122,6 @@ ul.nav a:hover {
   opacity:0.5;
 }
 #header-img:hover{
+  
   opacity:1;
 }
