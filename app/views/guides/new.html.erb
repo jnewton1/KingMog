@@ -1,0 +1,9 @@
+<div align="center"; style="padding-top:10%; " >
+    <h1>Registration</h1>
+<div align="center">
+<%= form_tag guides_path do %>
+  <%= label_tag :guide %><br/>
+  <%= text_field_tag :guide, params[:guide] %><br/>
+  <%= submit_tag "Submit" %>
+<% end %>
+

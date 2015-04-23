@@ -28,7 +28,7 @@ Rails.application.routes.draw do
   get 'logout', to: 'sessions#destroy', as: :logout
 
   # Routes for guides
-  get 'guides' => 'home#guides'
+  get 'guides' => 'guides#index', as: :guides
   get 'new', to: 'guides#new', as: :nguide
   get 'edit', to: 'guides#edit', as: :eguide
   delete 'guides/:id' => 'guides#destroy' , as: :dguides
