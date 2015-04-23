@@ -1,6 +1,6 @@
 class HomeController < ApplicationController
   
-   before_filter :authorize, only: [:new,:edit] 
+  # before_filter :authorize, only: [:new,:edit] 
 
   def index
   end
@@ -11,10 +11,6 @@ class HomeController < ApplicationController
   def credit
   end
   
-<<<<<<< HEAD
-  def guides
-=======
   def guide
->>>>>>> Jimbo
   end
 end
