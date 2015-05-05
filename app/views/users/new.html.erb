@@ -1,7 +1,7 @@
 <div class=jumbotron>
   <div class=container>
   <div class=bckground>
-<div align="center"; " >
+<div align="center";>
     <h1>Registration</h1>
 <%= form_for @user do |f| %>
   <% if @user.errors.any? %>
@@ -12,6 +12,7 @@
       <% end %>
     </ul>
   <% end %>
+  
   <%= f.label :email %><br/>
   <%= f.text_field :email %><br/>
   <%= f.label :password %><br/>
@@ -20,6 +21,7 @@
   <%= f.password_field :password_confirmation %><br/>
   <%= f.submit %>
 <% end %>
+<!--Jimmy updated -->
 </div>
 </div>
 </div>
