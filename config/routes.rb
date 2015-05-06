@@ -2,25 +2,12 @@ Rails.application.routes.draw do
   
   resources :users
   resources :sessions
-  #resources :guides
 
   
   get 'credit' => 'home#credit'
     
   root 'home#index'
   
-  #routes or create action
-  get 'videos' => 'videos#index'  
-  post 'videos' => 'videos#create'  
-  
-  get 'videos' => 'videos#new' , as: :new_video
-  
-  delete 'videos/:id' => 'videos#destroy' , as: :delete_video
-  
-  # rooutes for edit action
-  get 'videos/:id/edit' => 'videos#edit' , as: :edit_video
-  post 'videos/:id' => 'videos#update' , as: :update_video
-
   #routes for user login
   get 'about' => "home#about"
   get 'signup', to: 'users#new', as: :signup
@@ -29,7 +16,7 @@ Rails.application.routes.draw do
 
   # Routes for guides
   get 'guides' => 'home#guide'
-  #get 'guides' => 'guides#index'
+  get 'guides' => 'guides#index'
   get 'new', to: 'guides#new', as: :nguide
   get 'edit', to: 'guides#edit', as: :eguide
   delete 'guides/:id' => 'guides#destroy' , as: :dguides
