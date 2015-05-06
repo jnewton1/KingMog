@@ -3,11 +3,17 @@
   <div class=bckground>
 <div align="center"; >
   <h1>Log In</h1>
+  <table>
 <%= form_tag sessions_path do %>
-  <%= label_tag :email %><br/>
-  <%= text_field_tag :email, params[:email] %><br/>
-  <%= label_tag :password %><br/>
-  <%= password_field_tag :password %><br/>
+<tr>
+  <td><%= label_tag :email %><br/></td>
+  <td><%= text_field_tag :email, params[:email] %><br/></td>
+  <tr>
+  <td><%= label_tag :password %><br/></td>
+  <td><%= password_field_tag :password %><br/></td>
+  </tr>
+  </table>
+  <br/>
   <%= submit_tag "Log In" %>
 <% end %>
 </div>

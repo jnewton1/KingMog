@@ -25,6 +25,7 @@
   background-size: 100% 1100px;
   color: #FFFFFF;
 }
+
 .jumbotron .container {
   position: relative;
   top: 100px;
@@ -33,6 +34,17 @@
   padding: 50px;
   //background-color: #000000;
   background: rgba(0, 0, 0, 0.8);
+  //opacity: 0.8;
+  color: #FFF;
+  border-radius:25px;
+}
+
+.bckground2 {
+  width:400px !important;
+  margin:auto;
+  padding-top: 25px;
+  //background-color: #000000;
+  background: rgba(255, 255, 255, 0.8);
   //opacity: 0.8;
   color: #FFF;
   border-radius:25px;
@@ -47,16 +59,20 @@
   font-size: 18px;
   font-weight:bolder;
 }
+
 #logo{
   font-size:30px;
 }
+
 .navbar .container .nav{
   position:relative;
   right:5%;
   bottom:56px;
 }
+
 ul.nav a:hover { 
-  color:blue !important; 
+  color:white !important;
+  text-decoration: underline !important;
 }
 
 .nav li{
@@ -121,7 +137,21 @@ ul.nav a:hover {
 #header-img{
   opacity:0.5;
 }
+
 #header-img:hover{
-  
   opacity:1;
+}
+
+.bckground input{
+  color:black;
+}
+
+table 
+{
+    border-collapse:separate;
+    border-spacing:0 5px;
+}
+
+td{
+ padding-right:15px;
 }
