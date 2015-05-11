@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
   
+  get 'macro/index'
+
   resources :users
   resources :sessions
 
@@ -20,6 +22,10 @@ Rails.application.routes.draw do
   get 'new', to: 'guides#new', as: :nguide
   get 'edit', to: 'guides#edit', as: :eguide
   delete 'guides/:id' => 'guides#destroy' , as: :dguides
+  
+  #routes for macros
+  get 'macros' => 'home#macro'
+  get 'macros' => 'home#index'
   
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
